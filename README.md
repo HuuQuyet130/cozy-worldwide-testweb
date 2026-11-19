@@ -1,23 +1,27 @@
 # COZY WORLDWIDE — Fashion Storefront Web Application
 
-Website thương mại điện tử thời trang streetwear xây dựng với giao diện trang chủ danh sách sản phẩm, trang chi tiết sản phẩm (chọn size, số lượng, thêm vào giỏ hàng), trang giỏ hàng và luồng đăng nhập / đăng ký tài khoản[cite: 1, 3, 4, 5, 6].
+**Live Demo:** [https://quyetleee.github.io/cozy-worldwide-testweb/](https://quyetleee.github.io/cozy-worldwide-testweb/)
 
-## Cấu trúc dự án
-- `index.html`: Trang chủ hiển thị banner và danh sách 16 sản phẩm thời trang.
-- `product.html`: Trang chi tiết sản phẩm theo `id`, hỗ trợ chọn size (`S`, `M`, `L`), điều chỉnh số lượng và thêm vào giỏ hàng[cite: 5].
-- `cart.html`: Trang giỏ hàng hiển thị sản phẩm đã chọn, số lượng, tổng tiền ước tính (`VND`) và nút thanh toán[cite: 1].
-- `login.html` & `register.html`: Giao diện đăng nhập, đăng ký và quản lý trạng thái phiên người dùng[cite: 4, 6].
-- `Dockerfile`: Đóng gói ứng dụng web tĩnh lên `nginx:alpine` tại cổng `80`.
+A streetwear e-commerce storefront web application designed with a clean visual hierarchy and smooth shopping flows, including a product catalog homepage, product detail pages (size & quantity selection, add-to-cart), shopping cart management, and user authentication screens.
 
-## Công nghệ sử dụng
-- **Frontend:** HTML5, CSS3 (`style.css`, `home.css`, `product.css`, `cart.css`), JavaScript (`product.js`, `cart.js`, `auth.js`)[cite: 1, 3, 4, 5, 6].
-- **Icons:** Font Awesome[cite: 1, 3, 4, 5, 6].
-- **Containerization:** Docker (`nginx:alpine`)[cite: 2].
+## Key Features & Structure
 
-## Hướng dẫn chạy dự án
+* **`index.html`**: Storefront homepage featuring hero banners and a 16-item streetwear product catalog.
+* **`product.html`**: Dynamic product detail page by `id`, supporting size selection (`S`, `M`, `L`), quantity adjustment, and cart integration.
+* **`cart.html`**: Shopping cart interface displaying selected items, quantities, estimated total (`VND`), and checkout flow.
+* **`login.html` & `register.html`**: User authentication interfaces with client-side session state handling.
+* **`Dockerfile`**: Containerized static web deployment using `nginx:alpine` on port `80`.
 
-### Cách 1: Chạy trực tiếp trên máy (Local)
-1. Clone repository về máy:
+## Tech Stack
+
+* **Frontend:** HTML5, CSS3 (`style.css`, `home.css`, `product.css`, `cart.css`), Vanilla JavaScript (`product.js`, `cart.js`, `auth.js`)
+* **Icons:** Font Awesome
+* **Containerization:** Docker (`nginx:alpine`)
+
+## Getting Started
+
+### Run Locally
+1. Clone the repository:
    ```bash
-   git clone [https://github.com/username-cua-ban/cozy-worldwide-web.git](https://github.com/username-cua-ban/cozy-worldwide-web.git)
-   cd cozy-worldwide-web
+   git clone [https://github.com/Quyetleee/cozy-worldwide-testweb.git](https://github.com/Quyetleee/cozy-worldwide-testweb.git)
+   cd cozy-worldwide-testweb
