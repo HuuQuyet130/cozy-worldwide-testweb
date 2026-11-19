@@ -1,0 +1,113 @@
+/* ================= BANNER ================= */
+.banner{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+/* ================= PRODUCT GRID ================= */
+.product-container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); /* 🔥 4 sản phẩm / hàng */
+    gap:40px;
+    padding:60px 80px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+
+/* ================= PRODUCT CARD ================= */
+.product{
+    position: relative;
+    text-align:left;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.product img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    transition:0.3s;
+    display: block;
+}
+.hover-img{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+.product:hover .hover-img{
+    opacity:1;
+}
+
+.product:hover .main-img{
+    opacity:0;
+}
+.product:hover{
+    transform:translateY(-7px);
+}
+
+.product:hover img{
+    opacity:0.85;
+}
+.brand-intro{
+    text-align:center;
+    margin:60px auto 30px;
+    max-width:700px; /* 🔥 thu hẹp 2 bên */
+    padding:0 20px;
+}
+
+.brand-intro p{
+    font-size:13px;
+    letter-spacing:1.5px;
+    line-height:1.8;
+    color:#6c6c6c;
+
+    font-weight:300; /* 🔥 mảnh hơn */
+    text-transform:uppercase;
+}
+
+.brand-intro span{
+    display:block;
+    margin-top:10px;
+    font-size:12px;
+    color:#565656;
+    font-weight:300;
+}
+
+.product h3{
+    margin:10px 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight:500;
+    color:rgb(0, 0, 0);
+}
+.product:hover h3{
+    opacity:0.7;
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 1024px){
+    .product-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding:40px;
+    }
+}
+
+@media (max-width: 600px){
+    .product-container{
+        grid-template-columns: 1fr;
+        padding:20px;
+    }
+}
